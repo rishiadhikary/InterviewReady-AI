@@ -1,5 +1,11 @@
-[README.md](https://github.com/user-attachments/files/34674235/README.md)
+[README.md](https://github.com/user-attachments/files/34674329/README.md)
 # InterviewReady AI
+<img width="715" height="532" alt="technical-questions" src="https://github.com/user-attachments/assets/15c1707c-0643-4a21-8460-d0cf91b5176c" />
+<img width="596" height="446" alt="register" src="https://github.com/user-attachments/assets/0563dfe8-e942-4e2b-b233-6b49a257b57f" />
+<img width="723" height="509" alt="preparation-roadmap" src="https://github.com/user-attachments/assets/f98dc5ba-76c8-4790-9883-d65d674a50db" />
+<img width="538" height="368" alt="login" src="https://github.com/user-attachments/assets/bd1df3b4-1d99-4346-b01d-d584e1274c05" />
+<img width="751" height="499" alt="generate-interview-plan" src="https://github.com/user-attachments/assets/ace19bd2-ed8c-4afc-b5c6-f184b7292660" />
+<img width="783" height="487" alt="create-interview-plan" src="https://github.com/user-attachments/assets/c4c9b4ab-6fdd-4d57-a7d7-2b22a322a665" />
 
 An AI-powered interview preparation platform that analyzes a candidate's resume or self-description against a target job description and generates a personalized interview preparation strategy.
 
