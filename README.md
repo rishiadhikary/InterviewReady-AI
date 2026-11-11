@@ -187,7 +187,7 @@ Contributions and suggestions are welcome.
 B.Tech, Mechanical Engineering — NIT Durgapur
 
 - GitHub: [rishiadhikary](https://github.com/rishiadhikary)
-- LinkedIn: Add your LinkedIn profile URL
+- LinkedIn: https://www.linkedin.com/in/rishiadhikarydeveloper/
 
 ---
 
