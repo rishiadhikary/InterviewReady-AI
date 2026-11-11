@@ -1,260 +1,193 @@
-# InterviewReady AI – AI-Powered Interview Preparation Platform
+[README.md](https://github.com/user-attachments/files/34674235/README.md)
+# InterviewReady AI
 
-An AI-powered interview preparation platform that helps candidates prepare for job interviews through personalized resume analysis, job-description matching, skill-gap identification, and AI-generated interview questions.
+An AI-powered interview preparation platform that analyzes a candidate's resume or self-description against a target job description and generates a personalized interview preparation strategy.
 
-**Live Demo:** https://interview-ready-ai-mu.vercel.app/
+InterviewReady AI helps candidates understand how closely their profile matches a role, identify skill gaps, practise technical and behavioral questions, and follow a focused preparation roadmap.
 
-**Backend API:** https://interviewready-ai-h51l.onrender.com/
-
-**GitHub Repository:** https://github.com/rishiadhikary/InterviewReady-AI
+<!-- Replace the links below with your actual deployed URLs and repository URL. -->
+**Live Demo:** `Add your live application URL`  
+**Backend/API:** `Add your backend URL if publicly available`
 
 ---
 
-## Overview
+## Screenshots
 
-InterviewReady AI is designed to make interview preparation smarter, more personalized, and efficient.
+### Create a personalized interview plan
+Provide a target job description and either upload a resume (PDF/DOCX) or enter a short self-description.
 
-Users can provide their resume, personal introduction, and target job description. The platform leverages Google's Gemini AI to analyze their profile against the job requirements and generate actionable insights to improve their interview readiness.
+![Create interview plan](assets/screenshots/create-interview-plan.png)
 
-Instead of following generic preparation strategies, candidates receive personalized recommendations based on their skills, experience, and target role.
+### Generate interview strategy
+The platform uses the job requirements and candidate profile to create a tailored preparation strategy.
 
-## Key Features
+![Generate interview plan](assets/screenshots/generate-interview-plan.png)
 
-- **AI-Powered Resume Analysis:** Analyze your resume and identify relevant skills, qualifications, and areas for improvement.
-- **Job Description Matching:** Compare your profile against a target job description to understand how well your qualifications align with the role.
-- **Match Score:** Get an AI-generated compatibility score representing your profile's alignment with the job requirements.
-- **Skill Gap Analysis:** Identify missing technical skills and knowledge areas that need improvement.
-- **Technical Interview Questions:** Generate role-specific technical questions based on your profile and target job description.
-- **Behavioral Interview Questions:** Prepare for HR and behavioral rounds with personalized questions.
-- **Personalized Learning Roadmap:** Receive actionable recommendations to strengthen weak areas and improve interview readiness.
-- **PDF Report Generation:** Generate and download your personalized interview preparation report.
-- **Secure Authentication:** User registration and login with JWT-based authentication using HTTP-only cookies.
+### Technical interview questions
+Review role-specific technical questions generated from the candidate profile and job requirements.
 
-## Tech Stack
+![Technical questions](assets/screenshots/technical-questions.png)
 
-| Category | Technologies |
+### Personalized preparation roadmap
+Follow a structured, seven-day preparation plan with topics and concrete tasks.
+
+![Preparation roadmap](assets/screenshots/preparation-roadmap.png)
+
+### Authentication
+Users can create an account and sign in to access the application.
+
+| Register | Login |
+|---|---|
+| ![Register](assets/screenshots/register.png) | ![Login](assets/screenshots/login.png) |
+
+---
+
+## Features
+
+- **Resume or self-description input:** Upload a PDF/DOCX resume or provide a written profile.
+- **Job description analysis:** Use a target job description as the basis for personalized preparation.
+- **Profile-to-role match score:** Display an AI-generated match score and an indication of role alignment.
+- **Skill-gap identification:** Highlight skills and knowledge areas that may need more preparation.
+- **Technical questions:** Generate technical interview questions relevant to the target role.
+- **Behavioral questions:** Prepare for behavioral and HR interview rounds.
+- **Preparation roadmap:** Generate a structured seven-day plan with daily topics and tasks.
+- **Resume download:** Access the resume download action from the preparation interface.
+- **User authentication:** Register and log in to the platform.
+
+## How It Works
+
+1. Register or log in.
+2. Paste the target job description.
+3. Upload a resume in PDF/DOCX format or enter a self-description.
+4. Generate the interview strategy.
+5. Review the match score and identified skill gaps.
+6. Practise the generated technical and behavioral questions.
+7. Follow the preparation roadmap.
+
+## Technology Stack
+
+> Update this section if your implementation uses different libraries or services.
+
+| Layer | Technology |
 |---|---|
 | Frontend | React.js, Vite |
 | Backend | Node.js, Express.js |
-| Database | MongoDB Atlas |
-| AI Integration | Google Gemini API |
-| Authentication | JWT, HTTP-only Cookies |
-| HTTP Client | Axios |
-| Deployment | Vercel, Render |
-| Version Control | Git, GitHub |
+| Database | MongoDB |
+| AI integration | Google Gemini API |
+| API communication | Axios / Fetch |
+| Deployment | Add your hosting providers |
 
-## Application Workflow
+## Lighthouse Scores
 
-1. **Register / Login:** Create an account or log in securely.
-2. **Provide Your Profile:** Enter your self-description and upload or provide your resume details.
-3. **Add Job Description:** Paste the job description of your target position.
-4. **AI Analysis:** Gemini AI analyzes your profile and compares it with the job requirements.
-5. **Review Insights:** Explore your match score, skill gaps, and improvement areas.
-6. **Prepare for Interviews:** Get personalized technical and behavioral interview questions.
-7. **Download Report:** Generate a PDF containing your interview preparation insights.
+The reported Lighthouse audit results for InterviewReady AI are:
 
-## System Architecture
+| Category | Score |
+|---|---:|
+| Performance | **100** |
+| Accessibility | **93** |
+| Best Practices | **96** |
+| SEO | **96** |
 
-```text
-           USER
-             |
-             v
-      REACT + VITE
-        FRONTEND
-             |
-             | Axios Requests
-             | (Credentials Included)
-             v
-       NODE.JS + EXPRESS
-          BACKEND
-          /       \
-         /         \
-        v           v
-  MONGODB ATLAS   GEMINI API
-  (User Data)     (AI Analysis)
-        |           |
-        |           |
-        v           v
-  Authentication  Personalized
-  & User Records  AI Insights
-         \         /
-          \       /
-           v     v
-       RESPONSE TO USER
-              |
-              v
-       INTERVIEW REPORT
-          (PDF)
-```
+Scores can vary depending on the audit environment, device emulation, network conditions, and the page being tested. These values represent the results reported for the project at the time of the audit.
 
-## Project Structure
+## Getting Started
 
-The project is organized into separate frontend and backend applications.
+The commands below are a general setup outline. Confirm the actual folder names and npm scripts in your repository before running them.
 
-```text
-InterviewReady-AI/
-│
-├── frontend/
-│   ├── src/
-│   ├── public/
-│   ├── package.json
-│   └── ...
-│
-├── backend/
-│   ├── routes/
-│   ├── controllers/
-│   ├── models/
-│   ├── package.json
-│   └── ...
-│
-└── README.md
-```
+### Prerequisites
 
-*Note: Adjust the directory names above if your actual repository uses a different structure.*
+- Node.js and npm
+- A MongoDB database, if the backend uses MongoDB
+- An AI provider API key, if required by the backend
 
-## Installation & Setup
-
-Follow these steps to run the project locally.
-
-### 1. Clone the Repository
+### 1. Clone the repository
 
 ```bash
-git clone https://github.com/rishiadhikary/InterviewReady-AI.git
-
-cd InterviewReady-AI
+git clone <YOUR_GITHUB_REPOSITORY_URL>
+cd <YOUR_PROJECT_DIRECTORY>
 ```
 
-### 2. Backend Setup
+### 2. Install dependencies
 
-Navigate to the backend directory:
+If your project has separate frontend and backend folders:
 
 ```bash
 cd backend
 npm install
-```
 
-Create a `.env` file in the backend directory:
-
-```env
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret
-GOOGLE_GENAI_API_KEY=your_gemini_api_key
-NODE_ENV=development
-```
-
-Start the backend server using the development script configured in your `package.json`:
-
-```bash
-npm run dev
-```
-
-### 3. Frontend Setup
-
-Open another terminal and navigate to the frontend directory:
-
-```bash
-cd frontend
+cd ../frontend
 npm install
 ```
 
-Configure the backend API URL in your frontend environment configuration according to your Axios setup.
+### 3. Configure environment variables
 
-For local development, use your local backend URL.
+Create the required `.env` files based on the variables read by your application. For example:
 
-Start the frontend:
+```env
+# Backend examples — use the exact variable names from your code
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+GOOGLE_GENAI_API_KEY=your_gemini_api_key
+```
+
+Do not commit real credentials or `.env` files. Add a sanitized `.env.example` file to document the required variable names.
+
+### 4. Run the application
+
+Use the scripts defined in each `package.json`. A common Vite frontend command is:
 
 ```bash
 npm run dev
 ```
 
-### 4. Access the Application
+Start the backend with the development script configured in its `package.json` (for example, `npm run dev`).
 
-Open the local URL provided by Vite in your terminal.
+## Project Structure
 
-The application should now be running locally.
+The exact structure may differ depending on your repository:
 
-## Environment Variables
+```text
+InterviewReady-AI/
+├── frontend/
+│   ├── src/
+│   ├── public/
+│   └── package.json
+├── backend/
+│   ├── routes/
+│   ├── controllers/
+│   ├── models/
+│   └── package.json
+├── assets/
+│   └── screenshots/
+└── README.md
+```
 
-The backend requires the following environment variables:
+## Future Enhancements
 
-| Variable | Description |
-|---|---|
-| `MONGO_URI` | MongoDB Atlas connection string |
-| `JWT_SECRET` | Secret key used for JWT authentication |
-| `GOOGLE_GENAI_API_KEY` | Google Gemini API key |
-| `NODE_ENV` | Application environment |
-
-**Important:** Never commit your `.env` file or expose API keys, database credentials, or authentication secrets in your GitHub repository.
-
-## API Endpoints
-
-The backend provides REST APIs for authentication and AI-powered interview analysis.
-
-### Authentication APIs
-
-| Method | Endpoint | Description |
-|---|---|---|
-| POST | `/api/auth/register` | Register a new user |
-| POST | `/api/auth/login` | Authenticate an existing user |
-| GET | `/api/auth/get-me` | Retrieve authenticated user details |
-
-### Interview API
-
-| Method | Endpoint | Description |
-|---|---|---|
-| POST | `/api/interview` | Generate AI-powered interview analysis and preparation insights |
-
-*Additional endpoints may be added as the project evolves.*
-
-## Deployment
-
-The application is deployed using the following services:
-
-- **Frontend:** Vercel
-- **Backend:** Render
-- **Database:** MongoDB Atlas
-- **AI Service:** Google Gemini API
-
-Live Application: https://interview-ready-ai-mu.vercel.app/
-
-## Security Considerations
-
-- JWT-based authentication.
-- HTTP-only cookies for authentication token storage.
-- Environment variables for sensitive configuration.
-- Backend-managed API credentials.
-- Credential-aware Axios requests for authenticated API communication.
-
-## Future Improvements
-
-- [ ] Interactive mock interview sessions with AI.
-- [ ] Real-time interview feedback and evaluation.
-- [ ] Voice-based interview practice.
-- [ ] Advanced resume optimization recommendations.
-- [ ] Interview performance tracking and analytics.
-- [ ] Support for multiple job applications and preparation histories.
+- Interactive mock interviews with follow-up questions.
+- Voice-based interview practice.
+- AI-generated feedback on spoken or written answers.
+- Progress tracking across multiple preparation sessions.
+- More detailed resume improvement recommendations.
 
 ## Contributing
 
-Contributions, suggestions, and feature requests are welcome!
+Contributions and suggestions are welcome.
 
 1. Fork the repository.
-2. Create a new feature branch.
+2. Create a feature branch.
 3. Commit your changes.
-4. Push the branch to GitHub.
-5. Open a Pull Request.
+4. Push the branch.
+5. Open a pull request.
 
 ## Author
 
-**Rishi Adhikary**
+**Rishi Adhikary**  
+B.Tech, Mechanical Engineering — NIT Durgapur
 
-B.Tech Mechanical Engineering | NIT Durgapur
-
-Interested in Software Development, Full-Stack Engineering, Data Structures & Algorithms, and Generative AI.
-
-- GitHub: https://github.com/rishiadhikary
-- LinkedIn: Add your LinkedIn profile URL here.
+- GitHub: [rishiadhikary](https://github.com/rishiadhikary)
+- LinkedIn: Add your LinkedIn profile URL
 
 ---
 
-⭐ If you find this project interesting, consider giving it a star!
+If you find this project useful, consider giving the repository a star.
