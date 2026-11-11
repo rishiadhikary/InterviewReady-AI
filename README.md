@@ -7,8 +7,8 @@ An AI-powered interview preparation platform that analyzes a candidate's resume 
 InterviewReady AI helps candidates understand how closely their profile matches a role, identify skill gaps, practise technical and behavioral questions, and follow a focused preparation roadmap.
 
 <!-- Replace the links below with your actual deployed URLs and repository URL. -->
-**Live Demo:** `Add your live application URL`  
-**Backend/API:** `Add your backend URL if publicly available`
+**Live Demo:** `https://interview-ready-ai-mu.vercel.app/login`  
+**Backend/API:** `https://interviewready-ai-h51l.onrender.com/`
 
 ---
 
